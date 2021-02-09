@@ -1,0 +1,4 @@
+function y = newOrtoProg(n,P)
+
+L =
+y = (abs(dot(n,P)))/norm(n);
