@@ -18,14 +18,14 @@ norm(y)
 n = [1; 2; 3;];
 P = [4; 5; 6;];
 
-ortoProg(n,P)
+newOrtoProg(n,P)
 
 %% Uppgift 2c
 
 P = [pi; exp(1); 1;];
 n = [1; 0; 0;];
 
-ortoProg(n,P)
+newOrtoProg(n,P)
 
 %% Uppgift 3
 
