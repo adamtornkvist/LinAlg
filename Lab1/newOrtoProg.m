@@ -1,3 +1,5 @@
 function vL = newOrtoProg(n,P)
 
-vL = P - n;
+vL = (dot(n,P)/dot(n,n))*n;
+
+

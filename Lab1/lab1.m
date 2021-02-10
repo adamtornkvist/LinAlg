@@ -18,6 +18,7 @@ norm(y)
 n = [1; 2; 3;];
 P = [4; 5; 6;];
 
+%ortoProg(n,P)
 newOrtoProg(n,P)
 
 %% Uppgift 2c
