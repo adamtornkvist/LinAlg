@@ -6,7 +6,7 @@ v=[4; 9; 9]
 plotSpan(u,v)
 
 %% Uppgift 2a
-
+clc,clear
 u = [1; 2; 3;]
 v = [4; 5; 6;]
 
@@ -18,13 +18,16 @@ norm(y)
 n = [1; 2; 3;];
 P = [4; 5; 6;];
 
-
 newOrtoProg(n,P)
 
 %% Uppgift 2c
-
+clc, clear
 P = [pi; exp(1); 1;];
 n = [1; 0; 0;];
+
+Projektionen = [0; exp(1); 1;];
+
+
 
 newOrtoProg(n,P)
 
