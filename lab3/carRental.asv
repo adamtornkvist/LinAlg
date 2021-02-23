@@ -1,0 +1,11 @@
+function V = carRental(A, v, n)
+
+newV = A*v;
+
+if n > 1 &&
+    carRental(A, newV, n-1);
+
+else
+    V = newV
+    
+end
