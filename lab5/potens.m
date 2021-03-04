@@ -1,11 +1,11 @@
-function b = potens(A,r,p,b)
+function b = potens(A,p,b)
 
 if (~exist('p','var')) %% Kolla om det finns en satt precision
     p = 10;
 end
 
 if (~exist('b','var'))
-    b = [1; 1; 1];
+    b = randi([1, 1], [length(A),1]);
 end
 
 n = 0;
@@ -22,21 +22,9 @@ while (dif > 10^(-p))
      
 end
 
-%Inverse Iteration
-dif = 1;
-I = eye(length(A));
-inverseB = b;
-while (dif > 10^(-p))
-    
- y=inverseB;
- Ck = norm(inv(A - (r * I)) * inverseB);
- inverseB = (inv(A - (r * I)) * inverseB) / Ck;
- dif = norm(y-inverseB);
- 
-end
+
 
 powerB
 transB = powerB.';
 lamba = (transB * A * powerB) / (transB*powerB)
-n;
-inverseB
+n
