@@ -14,18 +14,18 @@ y = normSpan(u,v)
 norm(y)
 
 %% Uppgift 2b
+clc, clear
+n = [1; 2; 3;]; % Normalvektor för planet
+P = [4; 5; 6;]; % Random punkt
 
-n = [1; 2; 3;];
-P = [4; 5; 6;];
-
-newOrtoProg(n,P)
+newOrtoProg(n,P) % Projektion av Punkten P på planet
 
 %% Uppgift 2c
 clc, clear
 P = [pi; exp(1); 1;];
 n = [1; 0; 0;];
 
-Projektionen = [0; exp(1); 1;];
+Projektionen = [0; exp(1); 1;]
 
 
 
