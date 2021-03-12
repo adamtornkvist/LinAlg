@@ -24,8 +24,8 @@ end
 
 
 if n == fin + 1
-   B = z;
+   B = z; %Basfallet
 else
-   z(:,n) = newV;
-   B = vectorOrmbunk(newV, n+1, z, fin);
+   z(:,n) = newV; %Spara nya vektorn
+   B = vectorOrmbunk(newV, n+1, z, fin); % Kör skiten igen
 end

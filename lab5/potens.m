@@ -7,19 +7,22 @@ end
 if (~exist('b','var'))
     b = randi([1, 1], [length(A),1]);
 end
-
+bk = b;
 n = 0;
 dif = 1;
+
+eig = bk.'*A*bk/(bk.'*bk);
 
 powerB = b;
 %Power iteration
 while (dif > 10^(-p))
-    y = powerB;
+  
     powerB = (A*powerB)/norm(A*powerB);
     
     n = n+1;
-    dif = norm (y-powerB);
-     
+    eigNext = bk.'*A*bk/(bk.'*bk);
+    dif = norm(eig-eigNext);
+    eig = eigNext;
 end
 
 

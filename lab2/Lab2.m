@@ -56,7 +56,7 @@ n = 1;
 v = [1; 1];
 
 fin = 40000;
-z = zeros([2 fin]);
+z = zeros([2 fin])
 
 
 hold on

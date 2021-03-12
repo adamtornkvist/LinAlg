@@ -1,7 +1,0 @@
-function y=normSpan(u,v)
-
-w = cross(u,v); % Kryssprodukten av båda vektorerna
-L = norm(w); % Räknar ut längden av kryssprod
-y = [w(1)/L w(2)/L w(3)/L];
-
-
